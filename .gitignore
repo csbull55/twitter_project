@@ -1,3 +1,4 @@
 .venv
 conf.py
 /reddit_bot/secrets.py
+/reddit_bot/praw.ini

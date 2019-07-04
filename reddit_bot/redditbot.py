@@ -7,14 +7,15 @@ basic tasks is it will reply to comments that meet a certain parameter
 in the subs that are specified in the subs file
 """
 
-import requests
-import requests.auth
 import praw
-import secrets
 
-print(secrets.user())
+# creates instance off credentials in praw file
+reddit = praw.Reddit('bot1',
+                     user_agent='bot1 user agent',
+                     )
 
-# basic info
+subreddit_lookup = reddit.subreddit('all')
 
+posts = [submission.title for submission in subreddit_lookup.hot(limit=10)]
 
-
+print('\n'.join(posts))
