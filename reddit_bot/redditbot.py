@@ -7,7 +7,9 @@ basic tasks is it will reply to comments that meet a certain parameter
 in the subs that are specified in the subs file
 """
 
+import time
 import praw
+import emoji
 from subs_crawl import subs_to_crawl
 
 
@@ -18,7 +20,7 @@ class Subobj():
         self.num_of_post = num_of_post
         self.subobj = reddit.subreddit(self.sub)
 
-    # grabs post obj from hot post, used in other funcitons
+    # grabs post obj from hot post, used in other functions
     def sub_posts(self):
         posts = [submission for submission in self.subobj.hot(limit=self.num_of_post)]
         return posts
@@ -37,18 +39,21 @@ reddit = praw.Reddit('bot1',
 new_sub = Subobj(subs_to_crawl()[0], 25)
 posts = new_sub.sub_posts()
 
-# empty crab dict to count the crabs
-num_of_crabs = {'crab': 0}
+# empty word dict to count the word, sets word and reply word
+word = 'crab_emoji'
+reply_word = emoji.emojize(':crab:', use_aliases=True)
+num_of_crabs = {word: 0}
 
 # loads more comments after "load more", limit is set to 2 to for memory purposes
 posts[0].comments.replace_more(limit=2)
 
+# crawls the comment, if comment has word, reply with reply_word
 for comment in posts[0].comments.list():
-    if 'crab' in comment.body:
-        num_of_crabs['crab'] += 1
+    if word in comment.body:
+        num_of_crabs[word] += 1
+        comment.reply(reply_word)
 
 
-print(num_of_crabs)
 
 
 

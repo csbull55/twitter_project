@@ -6,3 +6,6 @@ kinda like adding 2+1
 gotta make sure it works
 """
 
+import emoji
+
+print(emoji.emojize(':crab:', use_aliases=True))
