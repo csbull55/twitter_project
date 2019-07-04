@@ -11,10 +11,19 @@ import praw
 from subs_crawl import subs_to_crawl
 
 
-def sub_obj(sub):
-    subreddit_lookup = reddit.subreddit(sub)
-    posts = [submission.title for submission in subreddit_lookup.hot(limit=5)]
-    return posts
+class Subobj():
+    def __init__(self, sub):
+        self.sub = sub
+        self.subobj = reddit.subreddit(self.sub)
+
+
+    def sub_posts(self):
+        posts = [submission for submission in self.subobj.hot(limit=5)]
+        return posts
+
+
+    def post_titles(self):
+        
 
 
 # creates instance off credentials in praw file
@@ -22,7 +31,6 @@ reddit = praw.Reddit('bot1',
                      user_agent='bot1 user agent',
                      )
 
-# returns top posts from subreddits
-for sub in subs_to_crawl():
-    posts = sub_obj(sub)
-    print(sub + '\n' + '\n'.join(posts) + '\n')
+new_sub = Subobj(subs_to_crawl()[0])
+
+print(new_sub.sub_posts())
