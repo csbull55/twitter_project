@@ -6,6 +6,9 @@ kinda like adding 2+1
 gotta make sure it works
 """
 
-import emoji
+import time
 
-print(emoji.emojize(':crab:', use_aliases=True))
+
+while True:
+    print('test')
+    time.sleep(20)
