@@ -6,9 +6,13 @@ kinda like adding 2+1
 gotta make sure it works
 """
 
-import time
+list = [1,2,3,4,5]
 
 
-while True:
-    print('test')
-    time.sleep(20)
+
+
+for i in range(6):
+    list.insert(0, i)
+    if len(list) > 5:
+        del list[-1]
+    print(list)
