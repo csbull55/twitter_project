@@ -3,6 +3,6 @@
 
 def subs_to_crawl():
     subs_crawl = [
-        '2007scape',
+        'crab_rave_bot',
         ]
     return subs_crawl
