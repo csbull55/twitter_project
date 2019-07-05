@@ -3,6 +3,8 @@
 ./praw.ini
 /reddit_bot/old_bots/praw.ini
 /tests/praw.ini
+/reddit_bot/Dockerfile
+
 
 
 
