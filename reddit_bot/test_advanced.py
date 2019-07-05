@@ -7,32 +7,19 @@ instead of getting too deep and having to restructure
 """
 
 import praw
+import emoji
 from subs_crawl import subs_to_crawl
-
-
-class Subobj():
-    def __init__(self, sub):
-        self.sub = sub
-
-
-    def sub_obj(self):
-        sub_reddit = reddit.subreddit(self.sub)
-        return sub_reddit
-
-
-def sub_obj(sub, num_posts):
-    subreddit_lookup = reddit.subreddit(sub)
-    posts = [submission for submission in subreddit_lookup.hot(limit=num_posts)]
-    return posts
-
 
 # creates instance off credentials in praw file
 reddit = praw.Reddit('bot1',
                      user_agent='bot1 user agent',
                      )
 
-# returns top posts from subreddits
+word ='crab_emoji'
+reply_word = emoji.emojize(':crab:', use_aliases=True)
+
 for sub in subs_to_crawl():
-    posts = sub_obj(sub, 5)
-    titles = [post.title for post in posts]
-    print('\n'.join(titles))
+    for comment in reddit.subreddit(sub).stream.comments():
+        if word in comment.body:
+            comment.reply(reply_word * 3)
+            print('replied to {}'.format(comment.body))

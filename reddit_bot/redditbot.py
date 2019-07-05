@@ -5,6 +5,9 @@
 this is the main file for the reddit bot
 basic tasks is it will reply to comments that meet a certain parameter
 in the subs that are specified in the subs file
+
+this is the old way of achieving my goal
+new file uses comments.stream() which basically consolidates all of this into like 5 lines lol
 """
 
 import time
