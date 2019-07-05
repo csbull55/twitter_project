@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d381a2a8-d02e-4f63-811a-2d4d0c93c3dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reddit_bot/mention_ids.pydata" beforeDir="false" afterPath="$PROJECT_DIR$/reddit_bot/old_bots/mention_ids.pydata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit_bot/old_bots/reddit_mention_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reddit_bot/reddit_reply_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit_bot/old_bots/reddit_reply_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reddit_bot/redditbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit_bot/old_bots/redditbot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reddit_bot/subs_crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit_bot/old_bots/subs_crawl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +26,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reddit_bot/reddit_reply_bot.py">
+        <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/reddit_reply_bot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="13" />
@@ -34,14 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/reddit_mention_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="249">
+              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="e#121#132#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reddit_bot/reddit_bot_mention.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -56,7 +68,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reddit_bot/subs_crawl.py">
+        <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/subs_crawl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
@@ -65,7 +77,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reddit_bot/redditbot.py">
+        <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/redditbot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" selection-end-column="54" />
@@ -101,6 +113,7 @@
         <option value="$PROJECT_DIR$/reddit_bot/reddit_bot_v2.py" />
         <option value="$PROJECT_DIR$/tests/test_basic.py" />
         <option value="$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py" />
+        <option value="$PROJECT_DIR$/reddit_bot/reddit_bot_mention.py" />
       </list>
     </option>
   </component>
@@ -177,7 +190,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\Projects\Programming_projects\reddit_bot\reddit_bot\reddit_reply_bot.py" />
+      <option name="SCRIPT_NAME" value="F:\Projects\Programming_projects\reddit_bot\reddit_bot\old_bots\reddit_reply_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,7 +211,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py" />
+      <option name="SCRIPT_NAME" value="F:\Projects\Programming_projects\reddit_bot\reddit_bot\old_bots\reddit_mention_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,7 +232,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reddit_bot/redditbot.py" />
+      <option name="SCRIPT_NAME" value="F:\Projects\Programming_projects\reddit_bot\reddit_bot\old_bots\redditbot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,7 +253,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\Projects\Programming_projects\reddit_bot\reddit_bot\reddit_reply_bot.py" />
+      <option name="SCRIPT_NAME" value="F:\Projects\Programming_projects\reddit_bot\reddit_bot\old_bots\reddit_reply_bot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,7 +310,7 @@
     <frame x="-7" y="0" width="1130" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13644859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16074766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,7 +354,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/reddit_bot/secrets.py" />
-    <entry file="file://$PROJECT_DIR$/reddit_bot/praw.ini">
+    <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/praw.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
@@ -355,7 +368,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit_bot/reddit_reply_bot.py">
+    <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/reddit_reply_bot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="13" />
@@ -365,7 +378,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit_bot/redditbot.py">
+    <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/redditbot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" selection-end-column="54" />
@@ -375,7 +388,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit_bot/subs_crawl.py">
+    <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/subs_crawl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
@@ -389,13 +402,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reddit_bot/reddit_mention_bot.py">
+    <entry file="file://$PROJECT_DIR$/reddit_bot/old_bots/reddit_mention_bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="249">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="e#121#132#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reddit_bot/reddit_bot_mention.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
         </state>
       </provider>
     </entry>
